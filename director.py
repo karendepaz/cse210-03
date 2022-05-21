@@ -11,9 +11,10 @@ class Director:
     
     def random_word(self):
 
-        word = random.choice(self.word)
+        word = random.choice(self.word).upper()
 
-        return f"the word is: {str(word)}"
+        return word
 
     def make_guess(self):
-        guess = input("Guess a letter [a-z]: ")
+        guess = input("Guess a letter [a-z]: ").upper()
+        return guess
