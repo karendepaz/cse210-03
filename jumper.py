@@ -15,9 +15,72 @@ class Jumper:
     """
     Construct the object with necessary attributes.
     """
-    pass
+    self.__stage = " "
+
 
   def get_stage(self, guessed_wrong):
+    if guessed_wrong == 0:
+      self.__stage = """ 
+                         _____
+                        /_____\\
+                        \\     /
+                         \\   /
+                           O
+                          /|\\
+                           |
+                          / \\
+    """
+    elif guessed_wrong == 1:
+      self.__stage = """ 
+                        /_____\\
+                        \\     /
+                         \\   /
+                           O
+                          /|\\
+                           |
+                          / \\
+    """
+    elif guessed_wrong == 2:
+      self.__stage = """ 
+                         _____
+                        \\     /
+                         \\   /
+                           O
+                          /|\\
+                           |
+                          / \\
+    """
+    elif guessed_wrong == 3:
+      self.__stage = """ 
+                        
+                        \\     /
+                         \\   /
+                           O
+                          /|\\
+                           |
+                          / \\
+    """
+    elif guessed_wrong == 4:
+      self.__stage = """ 
+                        
+                           
+                         \\   /
+                           O
+                          /|\\
+                           |
+                          / \\
+    """
+    elif guessed_wrong == 5:
+      self.__stage = """ 
+                        
+                        
+                         
+                           X
+                          /|\\
+                           |
+                          / \\
+    """
+
     """
     With the number of guesses that the player has gussed wrong,
     decide and return the correct stage of the jumper.
@@ -26,7 +89,7 @@ class Jumper:
     # number provided.
     
     # Return the stage of the Jumper.
-    pass
+    return self.__stage
 
   def show_jumper(self, guessed_wrong):
         """
@@ -35,4 +98,8 @@ class Jumper:
         # Pass the Jumper the number of incorrect guesses
         # the player has made and then print the current
         # state of the jumper.
-        pass
+        self.__stage == self.get_stage(guessed_wrong)
+        print(self.__stage)
+
+jumper = Jumper()
+jumper.show_jumper(5)
