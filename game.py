@@ -22,7 +22,10 @@ class Game:
         """
         Construct the object with necessary attributes.
         """
-        pass
+        self.secret_word = SecretWord()
+        self.jumper = Jumper()
+        self.game_over = False
+        
 
     def show_all(self):
         """
@@ -31,4 +34,5 @@ class Game:
         """
         # Call the Jumper's 'show_jumper' method and the
         # SecretWord's 'show_word' method.
-        pass
+        self.jumper.show_jumper(self.secret_word.guessed_wrong)
+        self.secret_word.show_word()
