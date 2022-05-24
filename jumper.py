@@ -101,5 +101,7 @@ class Jumper:
         self.__stage == self.get_stage(guessed_wrong)
         print(self.__stage)
 
-jumper = Jumper()
-jumper.show_jumper(5)
+
+# code used to test out Jumper class and its methods 
+# jumper = Jumper()
+# jumper.show_jumper(5)
