@@ -27,7 +27,7 @@ class Director:
         """
         # Welcome the player!
         print("\033[33m" + """
-Welcome to Jumer! You must guess the letters of the secret word!
+Welcome to Jumper! You must guess the letters of the secret word!
 Don't get too many guesses wrong, or the jumper will run out of parachute!
 """ + "\033[39m")
 
