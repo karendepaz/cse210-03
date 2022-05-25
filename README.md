@@ -1,25 +1,20 @@
-# cse210-03
+# Jumper
 
-PLAYER:
-Jumper game
+# Jumper is a game a lot like Hangman. You must guess the letters in
+# a word before the Jumper runs out a parachute.
 
-There are old skydivers and bold skydivers,
-but there are no old, bold skydivers.
-- Jeff 
+# The rules are as follows:
+# - The puzzle is a secret word randomly chosen from a list.
+# - The player guesses a letter in the puzzle.
+# - If the guess is correct, the letter is revealed.
+# - If the guess is incorrect, a line is cut on the player's parachute.
+# - If the puzzle is solved the game is over.
+# - If the player has no more parachute the game is over.
 
-"Jumper is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time."
+# The game specifications are as follows:
+# - The program must include a README file.
+# - The program must include class and method comments.
+# - The program must have at least four classes.
+# - The program must remain true to game play described in the overview.
 
-
-GAME SPECIFICATIONS:
-
-The puzzle is a secret word randomly chosen from a list.
-
-The player guesses a letter in the puzzle.
-
-If the guess is correct, the letter is revealed.
-
-If the guess is incorrect, a line is cut on the player's parachute.
-
-If the puzzle is solved the game is over.
-
-If the player has no more parachute the game is over.
+# Open the '__main__.py' file and run it to start the game.
